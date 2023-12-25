@@ -13,7 +13,7 @@
 			?>
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
-					<img src="image/produk/<?= $row['image']; ?>" >
+					<img src="image/produk/<?= $row['image']; ?>" style="width: 100%; height: 350px;" >
 					<div class="caption">
 						<h3><?= $row['nama'];  ?></h3>
 						<h4>Rp.<?= number_format($row['harga']); ?></h4>

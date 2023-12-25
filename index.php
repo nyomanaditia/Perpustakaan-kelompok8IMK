@@ -26,7 +26,7 @@ include 'header.php';
 			?>
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
-					<img src="image/produk/<?= $row['image']; ?>" >
+					<img src="image/produk/<?= $row['image']; ?>" style='height: 350px; width: 100%;'>
 					<div class="caption">
 						<h3><?= $row['nama'];  ?></h3>
 						<h4>Rp.<?= number_format($row['harga']); ?></h4>
