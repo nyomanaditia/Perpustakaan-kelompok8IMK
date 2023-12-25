@@ -1,9 +1,9 @@
-<?php 
+<?php
 include 'header.php';
 ?>
 
 <div class="container" style="padding-bottom: 250px;">
-	<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>Register</b></h2>
+	<h2 style=" width: 100%; border-bottom: 4px solid #E33924"><b>Register</b></h2>
 	<form action="proses/register.php" method="POST">
 		<div class="row">
 			<div class="col-md-6">
@@ -24,13 +24,13 @@ include 'header.php';
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">username</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username" name="username" required >
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username" name="username" required>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">No Tepl</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="+62" name="telp" required >
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="+62" name="telp" required>
 				</div>
 			</div>
 
@@ -38,7 +38,7 @@ include 'header.php';
 
 
 		<div class="row">
-			
+
 			<div class="col-md-6">
 				<div class="form-group">
 					<label for="exampleInputPassword1">Password</label>
@@ -57,6 +57,6 @@ include 'header.php';
 	</form>
 </div>
 
-<?php 
+<?php
 include 'footer.php';
 ?>

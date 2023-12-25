@@ -1,12 +1,12 @@
-<?php 
+<?php
 include 'header.php';
-$kd = mysqli_real_escape_string($conn,$_GET['kode_cs']);
+$kd = mysqli_real_escape_string($conn, $_GET['kode_cs']);
 $cs = mysqli_query($conn, "SELECT * FROM customer WHERE kode_customer = '$kd'");
 $rows = mysqli_fetch_assoc($cs);
 ?>
 
 <div class="container" style="padding-bottom: 200px">
-	<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>Checkout</b></h2>
+	<h2 style=" width: 100%; border-bottom: 4px solid #E33924"><b>Checkout</b></h2>
 	<div class="row">
 		<div class="col-md-6">
 			<h4>Daftar Pesanan</h4>
@@ -18,12 +18,12 @@ $rows = mysqli_fetch_assoc($cs);
 					<th>Qty</th>
 					<th>Sub Total</th>
 				</tr>
-				<?php 
+				<?php
 				$result = mysqli_query($conn, "SELECT * FROM keranjang WHERE kode_customer = '$kd'");
 				$no = 1;
 				$hasil = 0;
-				while($row = mysqli_fetch_assoc($result)){
-					?>
+				while ($row = mysqli_fetch_assoc($result)) {
+				?>
 					<tr>
 						<td><?= $no; ?></td>
 						<td><?= $row['nama_produk']; ?></td>
@@ -31,7 +31,7 @@ $rows = mysqli_fetch_assoc($cs);
 						<td><?= $row['qty']; ?></td>
 						<td>Rp.<?= number_format($row['harga'] * $row['qty']);  ?></td>
 					</tr>
-					<?php 
+				<?php
 					$total = $row['harga'] * $row['qty'];
 					$hasil += $total;
 					$no++;
@@ -45,15 +45,15 @@ $rows = mysqli_fetch_assoc($cs);
 
 	</div>
 	<div class="row">
-	<div class="col-md-6 bg-success">
-		<h5>Pastikan Pesanan Anda Sudah Benar</h5>
-	</div>
+		<div class="col-md-6 bg-success">
+			<h5>Pastikan Pesanan Anda Sudah Benar</h5>
+		</div>
 	</div>
 	<br>
 	<div class="row">
-	<div class="col-md-6 bg-warning">
-		<h5>isi Form dibawah ini </h5>
-	</div>
+		<div class="col-md-6 bg-warning">
+			<h5>isi Form dibawah ini </h5>
+		</div>
 	</div>
 	<br>
 	<form action="proses/order.php" method="POST">
@@ -100,6 +100,6 @@ $rows = mysqli_fetch_assoc($cs);
 </div>
 
 
-<?php 
+<?php
 include 'footer.php';
 ?>
