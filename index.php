@@ -16,9 +16,7 @@ include 'header.php';
 
 
 	<h4 class="text-center" style="font-family: arial; padding-top: 10px; padding-bottom: 10px; font-style: italic; line-height: 29px; border-top: 2px solid #E33924; border-bottom: 2px solid #E33924;">
-		Rapi Cake & Bakery adalah salah satu pelopor pertama dalam bisnis roti modern di Indonesia. Didirikan pada tahun
-		1978, saat ini dikelola di bawah PT. Mustika Citra Rasa. Produk kami sehat, bergizi, dan terjangkau oleh semua
-		orang.</h4>
+		IT Book Store adalah toko buku online yang menyediakan ribuan ebook dalam bidang Teknologi Informasi dengan koleksi terlengkap dan terbaru. Kami berdiri sejak 2022 yang memiliki visi menjadi pionir dan pemimpin pasar buku IT digital di Indonesia.</h4>
 
 
 	<h2 style=" width: 100%; border-bottom: 4px solid #E33924; margin-top: 80px;"><b>Produk Kami</b></h2>
